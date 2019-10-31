@@ -7,7 +7,51 @@ output:
     theme: journal
 ---
 
-# Resume
+# Education
+
+Columbia Mailman School of Public Health
+Epidemiology with a certificate in Biostatistics
+Master in Public Health | Class of 2021
+
+University of Notre Dame
+Psychology Major, Pre-Health Supplementary Major
+Bachelor of Arts *Cum Laude* | Class of 2016
+
+
+# Work Experience
+
+Clinical Research Coordinator | Columbia University Medical Center 
+June 2019-Present
+
+Administrative Coordinator | Columbia University Medical Center
+July 2017-June 2019
+
+Research Assistant | Columbia University Medical Center
+February 2017-July 2017
+
+# Skills
+
+## Languages
+
+Spanish (fluent)
+
+Quechua (Beginner)
+
+## Software Langauges 
+
+Statistical Analysis System (SAS) | Basic
+
+Structured Query Language (SQL) | Basic
+
+R programming Language (R) | Basic
+
+# Honors
+
+Delta Omega Member
+
+Psi Chi Member
+
+
 
 
 
