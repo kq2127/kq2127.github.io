@@ -1,0 +1,57 @@
+---
+title: "Flexdashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(viridis)
+library(p8105.datasets)
+library(plotly)
+```
+
+
+```{r}
+data("instacart")
+
+ic_df = 
+  instacart %>% 
+  count(aisle) %>% 
+  filter(n > 10000)
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+ic_df %>% 
+  mutate(aisle = fct_reorder(aisle, n)) %>% 
+  plot_ly(x = ~aisle, y = ~n, type = "scatter", color = ~aisle) %>% 
+  layout(title = 'Number of items ordered in each aisle',
+         xaxis = list(title = 'Aisle'),
+         yaxis = list(title = '# of items ordered'))
+
+
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+
+```
+
+### Chart C
+
+```{r}
+
+```
+
