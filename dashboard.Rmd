@@ -4,6 +4,7 @@ output:
   flexdashboard::flex_dashboard:
     orientation: columns
     vertical_layout: fill
+    theme: journal
 ---
 
 ```{r setup, include=FALSE}
@@ -18,10 +19,6 @@ library(plotly)
 ```{r}
 data("instacart")
 
-ic_df = 
-  instacart %>% 
-  count(aisle) %>% 
-  filter(n > 10000)
 ```
 
 Column {data-width=650}
@@ -30,10 +27,12 @@ Column {data-width=650}
 ### Chart A
 
 ```{r}
-ic_df %>% 
+instacart %>% 
+  count(aisle) %>% 
+  filter(n > 10000) %>% 
   mutate(aisle = fct_reorder(aisle, n)) %>% 
-  plot_ly(x = ~aisle, y = ~n, type = "scatter", color = ~aisle) %>% 
-  layout(title = 'Number of items ordered in each aisle',
+  plot_ly(x = ~aisle, y = ~n, type = "bar", color = ~aisle) %>% 
+  layout(title = 'Count of Items ordered per Aisle',
          xaxis = list(title = 'Aisle'),
          yaxis = list(title = '# of items ordered'))
 
@@ -46,12 +45,47 @@ Column {data-width=350}
 ### Chart B
 
 ```{r}
-
+instacart %>% 
+  filter(product_name %in% c("Pink Lady Apples", "Coffee Ice Cream") ) %>%
+  mutate(
+    day = recode(
+      order_dow,
+      "0" = "Sunday",
+      "1" = "Monday",
+      "2" = "Tuesday",
+      "3" = "Wednesday",
+      "4" = "Thursday",
+      "5" = "Friday",
+      "6" = "Saturday"),
+    day = fct_relevel(day, 
+      c("Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday")) )%>% 
+  group_by(product_name, day) %>% 
+  summarize(
+    mean_hod = mean(order_hour_of_day)
+         )%>% 
+  plot_ly(x = ~day, y = ~mean_hod, type = "scatter", mode = "lines", color = ~product_name) %>%
+  layout(title = 'Popular Purchasing Times',
+         xaxis = list(title = 'Day'),
+         yaxis = list(title = 'Mean hour of Day'))
 ```
 
 ### Chart C
 
 ```{r}
-
+instacart %>%
+  group_by(department) %>% 
+  mutate(n_obs = n()) %>% 
+  filter(n_obs > 40000) %>% 
+  plot_ly(x = ~department, y = ~days_since_prior_order, type = "box", color = ~department) %>%
+  layout(title = 'Popular Department Reorder Trends',
+         xaxis = list(title = 'Department'),
+         yaxis = list(title = 'Days since prior order'))
+```
 ```
 
