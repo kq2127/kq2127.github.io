@@ -9,11 +9,12 @@ output:
 
 # Education
 
-Columbia Mailman School of Public Health
-Epidemiology with a certificate in Biostatistics
+**Columbia Mailman School of Public Health** 
+Epidemiology with a certificate in Biostatistics      
 Master in Public Health | Class of 2021
 
-University of Notre Dame
+
+**University of Notre Dame**
 Psychology Major, Pre-Health Supplementary Major
 Bachelor of Arts *Cum Laude* | Class of 2016
 
