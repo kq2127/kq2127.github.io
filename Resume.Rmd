@@ -17,27 +17,42 @@ University of Notre Dame
 Psychology Major, Pre-Health Supplementary Major
 Bachelor of Arts *Cum Laude* | Class of 2016
 
-
 # Work Experience
 
 Clinical Research Coordinator | Columbia University Medical Center 
-June 2019-Present
+April 2019-Present
+
+* Enroll and consent participants into the Better BP study.
+
+* Take bp readings and handle urine and blood specimens.
+
+* Instruct participants on how to use ABPM & HBPM devices.
+
+* Review and update study protocols. 
 
 Administrative Coordinator | Columbia University Medical Center
-July 2017-June 2019
+June 2017-April 2019
+
+* Managed the ABPM clinic and performed duties ranging from: scheduling patients, checking patients in, collecting copayments, verifying insurance, and creating and uploading ABPM reports into medical records
+
+* Conducted technician appointments which consisted of setting up patients with a 24 hr blood pressure monitoring device and instructing them on how to use it.
+
+* Coordinated Hypertension Center visits for patients, worked with the HTNC administrative team to create workflows for different departments within the center, and updated and tracked HTN visits for internal use. 
 
 Research Assistant | Columbia University Medical Center
-February 2017-July 2017
+February 2017-June 2017
 
-# Skills
+* Managed the ABPM clinic and performed duties ranging from: scheduling patients, checking patients in, collecting copayments, verifying insurance, and creating and uploading ABPM reports into medical records
 
-## Languages
+* Conducted technician appointments which consisted of setting up patients with a 24 hr blood pressure monitoring device and instructing them on how to use it.
+
+# Languages
 
 Spanish (fluent)
 
 Quechua (Beginner)
 
-## Software Langauges 
+# Skills 
 
 Statistical Analysis System (SAS) | Basic
 
